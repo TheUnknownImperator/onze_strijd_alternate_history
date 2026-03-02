@@ -27,7 +27,7 @@ The Republic of Indonesia is a parliamentary republic with the president as the 
 
 Members of the KNIP are appointed directly by the president in order to maintain public legitimacy before a proper election could be held. The KNIP membership consists of political parties and regional representatives. Though the KNIP does not elect the prime minister as the position is appointed by the head of state, a majority vote-of-no-confidence from KNIP can remove the current government.
 
-The president was first elected unanimously by the PPKI (Panitia Persiapan Kemerdekaan Indonesia), but this would serve more as a provisional measure until a proper election can be held. The president is the head of state responsible for appointing the prime minister and the cabinet. In reality, however, the prime minister would negotiate with the president and the political parties to form a working cabinet, before the president could inaugurate them.
+The president was first elected unanimously by the PPKI (*Panitia Persiapan Kemerdekaan Indonesia*), but this would serve more as a provisional measure until a proper election can be held. The president is the head of state responsible for appointing the prime minister and the cabinet. In reality, however, the prime minister would negotiate with the president and the political parties to form a working cabinet, before the president could inaugurate them.
 
 @indonesia_timeline
 go-to: menu
@@ -198,36 +198,41 @@ Catholics: SPD: [+ catholics_spd_display +]%, Z: [+ catholics_z_display +]%, KPD
 @parties
 go-to: menu
 
-**SPD** - *Sozialdemokratische Partei Deutschlands* (Social Democratic Party of Germany) - this is us. We are a socialist and democratic party of the working class. We are the heirs of the legacy of Marx and Engels, Lassalle and Bebel. We are the foremost defenders of the Republic. The modern SPD was formed from a merger of the "Majority" SPD, which supported the Great War, and the "Independent" SPD or USPD, which opposed the war.
+**PS** - *Partai Sosialis* (Socialist Party) - this is us. We are a socialist and democratic party of the working class. We are the heirs of the legacy of Marx and Engels, Lassalle and Bebel. We are the foremost defenders of the Republic. The modern SPD was formed from a merger of the "Majority" SPD, which supported the Great War, and the "Independent" SPD or USPD, which opposed the war.
 
-**Z** - *Zentrumspartei* (Center Party) - a centrist to center-right Catholic party that supports the Republic, and has historically supported many of our labor, welfare, and anti-militarist priorities. They have often been in coalitions with us. They are often associated with the **BVP** (Bavarian People's Party), which represents Catholics in Bavaria. [? if year >= 1930 or chancellor = "Brüning" : They have appeared to take a more conservative turn recently, with the rise of Brüning and the party leader, Ludwig Kaas. ?]
+**PNI** - *Partai Nasional Indonesia* (National Party of Indonesia) - a centrist to center-right Catholic party that supports the Republic, and has historically supported many of our labor, welfare, and anti-militarist priorities. They have often been in coalitions with us. They are often associated with the **BVP** (Bavarian People's Party), which represents Catholics in Bavaria. [? if year >= 1930 or chancellor = "Brüning" : They have appeared to take a more conservative turn recently, with the rise of Brüning and the party leader, Ludwig Kaas. ?]
 
 Current relations: [+ z_relation : relationships +]
+# Note: Z in code -> PNI
 
-# TODO: replace this with the german state party after 1930
-**DDP** - *Deutsche Demokratische Partei* (German Democratic Party) - a center-left liberal party, popular among the intelligensia and educated middle class. They have often been in coalitions with us. [? if year >= 1930 : They have recently reformed themselves as the German State Party (DStP). ?]
+**PBI** - *Partai Buruh Indonesia* (Indonesian Labour Party) - a center-left liberal party, popular among the intelligensia and educated middle class. They have often been in coalitions with us. [? if year >= 1930 : They have recently reformed themselves as the German State Party (DStP). ?]
 
 Current relations: [+ ddp_relation : relationships +]
+# Note: DDP in code -> PBI
 
-**DVP** - *Deutsche Volkspartei* (German People's Party) - a conservative-liberal party, supported by the middle classes and bourgeoisie. We have occasionally been in coalitions.
+**Masyumi** - *Majelis Sjura Muslimin Indonesia* (Council of Indonesian Muslim Associations) - a conservative-liberal party, supported by the middle classes and bourgeoisie. We have occasionally been in coalitions.
 
 Current relations: [+ dvp_relation : relationships +]
+# Note: DVP in code -> Masyumi
 
-**DNVP** - *Deutschnationale Volkspartei* (German National People's Party) - a right-wing nationalist-conservative party, with authoritarian, monarchist, and racist elements. It is supported by the former aristocracy, rural landowners, and conservative Lutherans.
+**Parkindo** - *Partai Kristen Indonesia* (Indonesian Christian Party) - a right-wing nationalist-conservative party, with authoritarian, monarchist, and racist elements. It is supported by the former aristocracy, rural landowners, and conservative Lutherans.
 
 Current relations: [+ dnvp_relation : relationships +]
+# Note: DNVP in code -> Parkindo
 
-**KPD** - *Kommunistische Partei Deutschlands* (German Communist Party) - a radical left-wing offshoot of the SPD that emerged in the aftermath of the German Revolution of 1918, they follow the path of Moscow, opposing parliamentary democracy in favor of a Soviet-style revolution.
+**PKRI** - *Partai Katolik Republik Indonesia* (Catholic Party of the Republic of Indonesia) - a radical left-wing offshoot of the SPD that emerged in the aftermath of the German Revolution of 1918, they follow the path of Moscow, opposing parliamentary democracy in favor of a Soviet-style revolution.
+
+Current relations: [+ pkri_relation : relationships +]
+# Note: pkri_relation variable does not exist yet
+
+**PKI** - *Partai Komunis Indonesia* (Indonesian Communist Party) - a radical left-wing offshoot of the SPD that emerged in the aftermath of the German Revolution of 1918, they follow the path of Moscow, opposing parliamentary democracy in favor of a Soviet-style revolution.
 
 Current relations: [+ kpd_relation : relationships +]
+# Note: KPD in code -> PKI
 
-[? if sapd_formed: SAPD - Sozialistische Arbeiterpartei Deutschlands (Socialist Worker's Party of Germany) - a party recently formed in a split from the SPD, the SAPD is essentially an agglomeration of various left-wing splinter groups between the SPD and KPD. ?]
+# if new party formed, use this code: [? if sapd_formed: SAPD - Sozialistische Arbeiterpartei Deutschlands (Socialist Worker's Party of Germany) - a party recently formed in a split from the SPD, the SAPD is essentially an agglomeration of various left-wing splinter groups between the SPD and KPD. ?]
 
-**NSDAP** - *Nationalsozialistische Deutsche Arbeiterpartei* - (National Socialist German Worker's Party, or Nazis) - a far-right nationalist and antisemitic party. Led by Adolf Hitler, they attempted a coup in 1923, and were banned for it, but have since been legalized.
-
-Current relations: [+ nsdap_relation : relationships +]
-
-**Other parties** - there is a multitude of small, mostly conservative parties, such as the Economic Party of the German Middle Class, the Farmer's Party, the Agricultural League, and others. Their political position usually lies between the DVP and DNVP. 
+**Other parties** - there is a multitude of small parties ranging from radical left-wing to conservative right-wing such as (. . .). Though some parties might have a sizable local influence, they are largely irrelevant in the national stage.
 
 @paramilitaries
 on-arrival: {!
